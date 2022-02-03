@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Inactive Real Estate listings</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+  </head>
+  <body>
+    <h1>
+      Real Estate
+      {% for place in places %}
+      <h2>
+      {{ place.Id }}
+
+        <p>
+          <b>Municipality</b>: {{ place.Municipality }}
+        </p>
+        <p>
+          <b>Community</b>: {{ place.Community }}
+        </p>
+        <p>
+          <b>List_Price($)</b>: {{ place.List_Price }}
+        </p>
+      </h2>
+      </h1>
+      {% endfor %}
+    
+
+  </body>
+</html>
