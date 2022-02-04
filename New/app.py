@@ -34,3 +34,6 @@ def index():
       else:
         first_line = False
   return render_template("index.html", places=places)
+
+if __name__ == "__main__":
+   app.run()
